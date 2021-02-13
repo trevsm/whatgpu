@@ -55,7 +55,7 @@ export default function App() {
         <Suspense fallback={null}>
           <Model active={active} />
         </Suspense>
-        <Stats />
+        {/* <Stats /> */}
       </Canvas>
     </>
   )

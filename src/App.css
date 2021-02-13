@@ -125,6 +125,7 @@ canvas,
   outline: none;
   border: none;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .landing button.active {
