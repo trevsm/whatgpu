@@ -1,0 +1,42 @@
+{
+  "name": "whatgpu",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/",
+  "dependencies": {
+    "@react-spring/core": "^9.0.0-rc.3",
+    "@react-spring/three": "^9.0.0-rc.3",
+    "@react-three/drei": "^2.2.22",
+    "minireset.css": "^0.0.7",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-postprocessing": "^1.4.0",
+    "react-scripts": "^4.0.1",
+    "react-spring": "^8.0.27",
+    "react-three-fiber": "5.0.3",
+    "three": "^0.123.0"
+  },
+  "scripts": {
+    "start": "react-scripts start ",
+    "build": "mv docs build && react-scripts build && mv build docs && cp CNAME docs",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "react-spring-issue-1078": "find node_modules -path \\*@react-spring/\\*/package.json -exec sed -i.bak 's/\"sideEffects\": false/\"sideEffects\": true/g' {} +",
+    "postinstall": "npm run react-spring-issue-1078"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
